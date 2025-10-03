@@ -1,0 +1,49 @@
+@font-face {
+    font-family: car;
+    src: url(Aerospace.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.cointainer{
+     width: 100%;
+    height: 100%; 
+    background-image: url(https://images.unsplash.com/photo-1724391114112-c83ad59f1d5f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhciUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+background-position: center;
+}
+.textarea{
+    color: white;
+    font-family: car;
+    text-align: center;
+    padding-top: 220px;
+}
+.textarea h3{
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 25px;
+}
+.textarea h4{
+    font-size: 20px;
+    font-weight: 100;
+padding-bottom: 1px;
+
+}
+button{
+    padding: 10px 40px;
+    color: rgb(36, 36, 36);
+    background-color:#ecc902;
+    border: none;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif  ;
+    font-weight: 800;
+    font-size: 15px;
+}

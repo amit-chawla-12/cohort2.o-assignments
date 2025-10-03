@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: rgb(239, 239, 239);
+}
+.nav {
+  background-color: rgb(1, 22, 97);
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+.nav h3 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav p {
+  color: rgb(185, 181, 181);
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.margin{
+margin: 20px;
+margin-inline: 100px;
+     padding: 20px;
+     
+     text-align: center;
+}
+.about-me {
+
+  color: black;
+  text-align: center;
+
+  background-color: #fff;
+ 
+}
+.about-me h3 {
+  font-weight: 600;
+  font-size: 21px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 5px;
+}
+.about-me p {
+  color: rgb(115, 112, 112);
+  font-family: Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+ 
+}
+.education{
+    background-color: rgb(167, 231, 253);
+}
+.education h4{
+    font-weight: 600;
+  font-size: 21px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 5px;
+}
+.education p {
+    background-color: rgb(255, 255, 255);
+  margin: 8px;
+  padding: 10px;
+  margin-inline: 200px;
+}
+.skills{
+   background-color: rgb(248, 248, 108);
+}
+.skills h4{
+    font-weight: 600;
+  font-size: 21px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 5px;
+}
+.skills p {
+    background-color: rgb(255, 255, 255);
+  margin: 8px;
+  padding: 10px;
+   margin-inline: 200px;
+}
+.project{
+   background-color: rgb(245, 186, 245);
+}
+.project h4{
+    font-weight: 600;
+  font-size: 21px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 5px;
+}
+.project p {
+    background-color: rgb(255, 255, 255);
+  margin: 8px;
+  padding: 10px;
+   margin-inline: 200px;
+}
+.contact{
+   background-color: rgb(214, 254, 154);
+}
+.contact h4{
+    font-weight: 600;
+  font-size: 21px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 5px;
+}
+.contact p {
+    background-color: rgb(255, 255, 255);
+  margin: 8px;
+  padding: 10px;
+   margin-inline: 200px;
+}
+.end{
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+.end p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

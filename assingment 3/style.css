@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
+
+@font-face {
+  font-family: sweater;
+  src: url(GoodUnicornRegular-Rxev.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 102%;
+}
+.container {
+  width: 100%;
+  height: 102%;
+  background-color: #ffffff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+a {
+  text-decoration: none;
+  margin-inline: 10px;
+  border-radius: 10px;
+  padding: 7px 9px;
+  transition: all 1s ease;
+}
+a:hover {
+  /* border: 2px solid black; */
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.logo h3 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-weight: 600;
+}
+
+.container > h1 {
+  font-family: "sweater";
+  text-align: center;
+  font-weight: 400;
+  font-size: 170px;
+  padding-top: 60px;
+}
+.details {
+  width: 205px;
+  margin: 0 40px;
+}
+.details h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-family: "sweater";
+  font-weight: 200;
+}
+.details p {
+  font-size: 15px;
+  font-weight: 100;
+}
+.material {
+  margin-top: 15px;
+}
+
+#left-btmnav {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  padding: 15px 30px;
+}
+#right-btmnav {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  padding: 15px 40px;
+}
+
+.imgs img {
+  position: absolute;
+}
+#img1 {
+  height: 200px;
+  top: 57%;
+  left: 43%;
+}
+#img2 {
+  height: 180px;
+  top: 48%;
+  left: 54%;
+}
+#img3 {
+  height: 190px;
+  top: 59%;
+  left: 63%;
+}
