@@ -1,0 +1,162 @@
+@font-face {
+  font-family: apple;
+  src: url(fonts/sf-pro-text_regular.woff2);
+}
+@font-face {
+  font-family: apple2;
+  src: url(fonts/sf-pro-display_semibold.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: apple;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  background: rgb(233, 232, 232);
+  height: 100%;
+  width: 100%;
+}
+.pages {
+  height: 100%;
+  width: 100%;
+  background-image: url(images/background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.navbar {
+  width: 100%;
+  height: 42px;
+  background-color: rgba(37, 37, 39, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  position: fixed;
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 250;
+}
+.navbar i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 500;
+}
+.centre {
+  color: white;
+  text-align: center;
+  padding: 47px;
+}
+.centre h2 {
+  font-size: 50px;
+  font-family: apple2;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.centre h4 {
+  font-size: 24px;
+  font-weight: 100;
+  /* padding: 13px; */
+}
+
+.links {
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.links button {
+  background-color: #047ffa;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+#buy {
+  color: #047ffa;
+  background-color: transparent;
+  border: 1px solid #047ffa;
+}
+#buy:hover {
+  background-color: #047ffa;
+  color: white;
+}
+
+.page2 {
+  background-image: url(images/background-img-2.jpg);
+}
+.page2-centre {
+  color: black;
+}
+.page2-centre h4 {
+  font-weight: 400;
+}
+.page3 {
+  background-image: url(images/background-img-3.jpg);
+}
+.page3-centre {
+  color: black;
+}
+.double {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding-inline: 10px;
+}
+
+.page4 {
+  background-image: url(images/background-img-4.jpg);
+}
+.page5 {
+  background-image: url(images/background-img-5.jpg);
+}
+.doublepage-centre {
+  color: black;
+}
+.doublepage-centre h2 {
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.doublepage-centre h4 {
+  font-weight: 100;
+  font-size: 18px;
+}
+.doublepage-link button {
+  padding: 8px 12px;
+}
+.page6 {
+  background-image: url(images/background-img-6.jpg);
+}
+.page7 {
+  background-image: url(images/background-img-7.jpg);
+}
+.end {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.end p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
