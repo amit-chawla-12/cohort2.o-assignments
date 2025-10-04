@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 html,
 body {
@@ -12,13 +11,13 @@ body {
 .heading {
   text-align: center;
 }
-.heading h1{
-    font-size: 3rem;
-    font-weight: 700;
+.heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
-.heading p{
-    font-size: 1rem;
-    font-weight: 300;
+.heading p {
+  font-size: 1rem;
+  font-weight: 300;
 }
 .container {
   width: 100%;
@@ -73,14 +72,13 @@ body {
 .card p {
   text-align: center;
 }
-.end{
-    background: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    
+.end {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
-.end p{
-    margin-top: 10px;
-    margin-bottom: 20px;
+.end p {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
