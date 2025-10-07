@@ -1,0 +1,250 @@
+@font-face {
+  font-family: mona;
+  src: url(Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mona;
+  text-transform: capitalize;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.page {
+  width: 100%;
+  height: auto;
+  padding-inline: 30px;
+  padding-bottom: 90px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  /* background-color: lightblue; */
+  /* padding-inline: 30px; */
+}
+.nav-right img {
+  height: 25px;
+}
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.nav-right i {
+  font-size: 25px;
+  font-weight: 600;
+}
+.nav-left button {
+  padding: 15px 25px;
+  border: none;
+  font-weight: 600;
+  font-weight: 10px;
+  border-radius: 30px;
+}
+.trans-btn {
+  background-color: transparent;
+}
+.trans-btn:hover {
+  color: #7b7194;
+}
+.black-btn {
+  color: white;
+  background-color: black;
+}
+.black-btn:hover {
+  background-color: #7b7194;
+}
+.heading {
+  margin-top: 20px;
+}
+.heading h2 {
+  font-size: 51px;
+  font-weight: 600;
+}
+.para {
+  margin-top: 20px;
+  font-weight: 450;
+  font-size: 15px;
+}
+.buttons button {
+  padding: 10px 15px;
+  border: none;
+  margin-top: 50px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+#input-form {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 20px 20px;
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 30px;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  /* transition: all ease 1s; */
+  border: 3px solid transparent;
+}
+#input-form:hover {
+  background-color: transparent;
+  border: 3px solid lightpink;
+}
+.populars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.populars button {
+  padding: 8px 12px;
+  border: 1px solid rgb(224, 223, 223);
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 12px;
+}
+.populars button:hover {
+  background-color: rgb(224, 223, 223);
+}
+.flex-cen {
+  display: flex;
+  align-items: center;
+}
+.img-section-nav {
+  margin-top: 30px;
+  justify-content: space-around;
+
+  font-size: 15px;
+}
+
+.centre {
+  gap: 35px;
+}
+.right {
+  padding: 10px 15px;
+  border: 2px solid lightgray;
+  border-radius: 30px;
+}
+.img-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.details {
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.profile-img {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.hero {
+  border-radius: 10px;
+  padding: 3px 5px;
+  border: 1px solid transparent;
+  background-color: rgb(213, 208, 208);
+  color: white;
+  font-weight: 700;
+  margin-inline: 4px;
+}
+.hero:hover {
+  color: white;
+  background-color: black;
+}
+.card {
+  height: 260px;
+  width: 345px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.like-section p {
+  font-size: 11px;
+  font-weight: 600;
+  margin-inline: 4px;
+}
+.img1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 10px; */
+}
+.bottom {
+  /* border-radius: 20px; */
+  height: 80px;
+  width: 100%;
+  bottom: -80px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  /* background-color: black; */
+  color: white;
+  justify-content: space-between;
+  position: absolute;
+  transition: all ease 0.4s;
+  padding-inline: 20px;
+}
+.card:hover .bottom {
+  bottom: 3px;
+}
+.icons i {
+  color: black;
+  margin-inline: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 50%;
+}
+.bottom-nav {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-left img {
+  height: 30px;
+}
+.bottom-centre {
+  gap: 30px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.bottom-right i {
+  font-size: 23px;
+  margin-inline: 5px;
+}
+
+.end {
+  margin-top: 110px;
+  color: rgb(65, 63, 63);
+  justify-content: space-between;
+}
+
+.right-end a,
+.left-end a {
+  color: rgb(65, 63, 63);
+  text-decoration: none;
+}
+.right-end p,
+.left-end p {
+  /* margin-right: 20px; */
+  font-weight: 300;
+}
+.right-end {
+  width: 50%;
+  justify-content: space-between;
+}
+.left-end {
+  width: 35%;
+  justify-content: space-between;
+}
