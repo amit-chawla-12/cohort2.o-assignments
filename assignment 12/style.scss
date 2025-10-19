@@ -62,19 +62,27 @@ main {
 
             background-color: #292929;
             width: 100%;
-            padding: 1.2rem;
+            padding: 2rem;
             @include flex(column, space-between);
 
+            .logo h3 {
+                font-size: 1rem;
+                font-weight: 200;
+
+            }
+
             .text {
+                // padding: 2rem;
                 @include flex(column, space-between);
                 margin-top: 1rem;
 
 
                 h1 {
                     font-size: 2rem;
-                    margin: 0.5rem;
+                    // margin: 0.5rem;
                     font-weight: 400;
                     opacity: 0.8;
+
                 }
 
                 p {
@@ -139,6 +147,76 @@ main {
             }
         }
     }
+
+    figure {
+        @include flex(column, space-between);
+        gap: 1rem;
+
+        section.view3,
+        section.view4 {
+            width: 100%;
+            @include flex(column, space-between);
+            gap: 1rem;
+
+            .img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 1.2rem;
+                }
+            }
+
+            .bottom {
+
+                width: 100%;
+                border-radius: 1.2rem;
+
+                background-color: #292929;
+                padding: 2rem;
+                @include flex(column, space-between);
+
+                .logo h3 {
+                    font-size: 1rem;
+                    font-weight: 200;
+                    text-transform: uppercase;
+
+                }
+
+                .text {
+
+                    @include flex(column, space-between);
+                    // margin-top: 1rem;
+
+
+                    h1 {
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                        margin-top: 2.5rem;
+                        font-weight: 400;
+                        opacity: 0.8;
+
+                    }
+
+                    .para {
+
+                        margin-block: 1.7rem;
+                        display: grid;
+                        grid-template-rows: (2, 1fr);
+
+                        p {
+                            font-size: 1rem;
+                            font-weight: 300;
+                            opacity: 0.6;
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 @media(min-width: 650px) {
@@ -167,6 +245,21 @@ main {
                     font-size: 0.8rem;
                     margin-block: 0.5rem;
                 }
+            }
+        }
+
+        figure {
+            section.view3 {
+
+                flex-direction: row-reverse;
+
+
+
+            }
+
+            section.view4 {
+
+                flex-direction: row;
             }
         }
     }
