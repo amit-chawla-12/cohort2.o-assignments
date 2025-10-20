@@ -186,6 +186,153 @@ main figure section.view4 .bottom .text .para p {
   font-weight: 300;
   opacity: 0.6;
 }
+main section.view5 {
+  width: 100%;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+main section.view5 .top {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+main section.view5 .top h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+main section.view5 .top .btn {
+  display: none;
+}
+main section.view5 .bottom {
+  display: grid;
+  grid-template-rows: repea(3, 1fr);
+  width: 100%;
+  gap: 1rem;
+}
+main section.view5 .bottom .img1 {
+  background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+}
+main section.view5 .bottom .img2 {
+  background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp);
+}
+main section.view5 .bottom .img3 {
+  background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp);
+}
+main section.view5 .bottom .img {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  aspect-ratio: 1.1;
+  border-radius: 1.2rem;
+  background-size: cover;
+}
+main section.view5 .bottom .img .icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+main section.view5 .bottom .img .icons i {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin: 0.2rem;
+  background-color: rgba(98, 98, 98, 0.755);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+main section.view5 .bottom .img .icons i:hover {
+  border: 1px solid white;
+}
+main section.view5 .bottom .img .details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 0.9rem;
+  background-color: rgba(98, 98, 98, 0.755);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border: 1px solid rgb(255, 242, 242);
+}
+main section.view5 .bottom .img .details h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main section.view5 .bottom .img .details h3 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+main section.view5 .bottom .img img {
+  width: 100%;
+}
+main section.view6 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main section.view6 .top {
+  width: 100%;
+}
+main section.view6 .top img {
+  border-radius: 1.2rem;
+  width: 100%;
+}
+main section.view6 .bottom {
+  width: 100%;
+  border-radius: 1.2rem;
+  background-color: #292929;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main section.view6 .bottom .logo h3 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+main section.view6 .bottom .text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+main section.view6 .bottom .text h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+main section.view6 .bottom .text p {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.6;
+  margin-block: 2rem;
+}
+main section.view6 .bottom .text .btn {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+main section.view6 .bottom .text .btn i {
+  margin-inline: 0.5rem;
+  color: white;
+  padding: 0.85rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+main section.view6 .bottom .text .btn h3 {
+  margin-inline: 0.85 rem;
+  font-size: 0.9rem;
+}
 
 @media (min-width: 650px) {
   main section.view1 {
@@ -214,7 +361,39 @@ main figure section.view4 .bottom .text .para p {
   main figure section.view3 {
     flex-direction: row-reverse;
   }
+  main figure section.view3 .bottom.text.para {
+    grid-template-columns: repeat(2, 1fr);
+    color: red;
+  }
   main figure section.view4 {
     flex-direction: row;
+  }
+  main section.view5 .top {
+    margin-block: 2.5rem;
+  }
+  main section.view5 .top h2 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  main section.view5 .top .btn {
+    display: flex;
+    align-items: center;
+    color: red;
+  }
+  main section.view5 .top .btn i {
+    border: 1px solid white;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+  main section.view5 .top .btn h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    word-spacing: 0.7rem;
+  }
+  main section.view5 .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0;
   }
 }/*# sourceMappingURL=style.css.map */

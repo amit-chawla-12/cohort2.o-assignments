@@ -3,6 +3,7 @@
 
     justify-content: $justify-content;
     flex-direction: $direction;
+    // align-items: center;
 
 }
 
@@ -31,6 +32,8 @@ html {
 }
 
 main {
+    // display: gird;
+    // grid-template-rows: repeat(6, 1fr);
     width: 100%;
     padding: 1.2rem;
 
@@ -150,6 +153,7 @@ main {
 
     figure {
         @include flex(column, space-between);
+        // align-items: center;
         gap: 1rem;
 
         section.view3,
@@ -217,6 +221,194 @@ main {
         }
 
     }
+
+    section.view5 {
+        width: 100%;
+        gap: 1rem;
+        margin-block: 1rem;
+
+        .top {
+            padding: 1.5rem;
+            @include flex(row, space-between);
+            align-items: center;
+
+            h2 {
+
+                font-size: 1.8rem;
+                font-weight: 300;
+
+            }
+
+            .btn {
+                // @include flex(row, space-between);
+                display: none;
+            }
+        }
+
+        .bottom {
+            display: grid;
+
+            grid-template-rows: repea(3, 1fr);
+            width: 100%;
+            gap: 1rem;
+
+            .img1 {
+                background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+
+            }
+
+            .img2 {
+                background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp);
+
+            }
+
+            .img3 {
+                background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp);
+
+            }
+
+            .img {
+
+
+                @include flex(column, space-between);
+
+
+                aspect-ratio: 1.1;
+                // background-image: url(images/63d2cb2934d35c4b4c5b51da_studio-hero-p-1600.webp);
+                border-radius: 1.2rem;
+                // background-position: center;
+                background-size: cover;
+
+                // gap: 1rem;
+                .icons {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 1rem;
+                    padding: 0.5rem;
+
+                    i {
+                        padding: 0.5rem;
+                        border: 1px solid gray;
+                        border-radius: 50%;
+                        margin: 0.2rem;
+                        background-color: rgba(98, 98, 98, 0.755);
+                        backdrop-filter: blur(6px);
+                    }
+
+                    i:hover {
+                        border: 1px solid white;
+                    }
+                }
+
+                .details {
+                    @include flex(row, space-between);
+                    align-items: center;
+                    margin: 1rem;
+                    padding: 1rem 3rem;
+                    border-radius: 0.9rem;
+                    background-color: rgba(98, 98, 98, 0.755);
+                    backdrop-filter: blur(6px);
+                    border: 1px solid rgb(255, 242, 242);
+
+                    h1 {
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 0.7rem;
+                        font-weight: 300;
+                    }
+                }
+
+                // width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    section.view6 {
+        @include flex(column, space-between);
+        gap: 1rem;
+        width: 100%;
+
+
+
+        .top {
+            width: 100%;
+
+            img {
+                border-radius: 1.2rem;
+                width: 100%;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            border-radius: 1.2rem;
+
+            background-color: #292929;
+            width: 100%;
+            padding: 2rem;
+            @include flex(column, space-between);
+
+            .logo h3 {
+                font-size: 1rem;
+                font-weight: 200;
+
+            }
+
+            .text {
+                // padding: 2rem;
+                @include flex(column, space-between);
+                margin-top: 1rem;
+
+
+                h1 {
+                    font-size: 2rem;
+                    // margin: 0.5rem;
+                    font-weight: 400;
+                    opacity: 0.8;
+
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    opacity: 0.6;
+
+                    margin-block: 2rem;
+                }
+
+                .btn {
+                    margin-top: 3rem;
+                    display: flex;
+                    align-items: center;
+
+
+                    i {
+                        margin-inline: 0.5rem;
+                        color: white;
+                        padding: 0.85rem;
+                        border: 2px solid white;
+                        border-radius: 50%;
+
+                    }
+
+
+                    h3 {
+                        margin-inline: 0.85 rem;
+                        font-size: 0.9rem;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 650px) {
@@ -253,6 +445,10 @@ main {
 
                 flex-direction: row-reverse;
 
+                .bottom.text.para {
+                   grid-template-columns: repeat(2,1fr); 
+                          color: red;    }
+
 
 
             }
@@ -262,5 +458,43 @@ main {
                 flex-direction: row;
             }
         }
+
+        section.view5 {
+            .top {
+                margin-block: 2.5rem;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 2rem;
+                }
+
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    color: red;
+
+                    i {
+                        border: 1px solid white;
+                        padding: 0.5rem;
+                        margin-right: 0.5rem;
+                        border-radius: 50%;
+                    }
+
+                    h4 {
+
+                        font-size: 1rem;
+                        font-weight: 300;
+                        word-spacing: 0.7rem;
+                    }
+                }
+            }
+
+            .bottom {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 0;
+            }
+        }
+
     }
 }
