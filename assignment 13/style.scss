@@ -70,6 +70,8 @@ main {
 
     .section1 {
         margin-top: 6.5rem;
+      
+
     }
 
     .section-bg {
@@ -82,20 +84,25 @@ main {
             // flex-direction: column-reverse;
             display: grid;
             grid-template-columns: 1fr;
+            grid-template-areas: "top-img"
+                                 "top-text";
+            
 
             img {
                 width: 100%;
+                grid-area: top-img;
             }
 
             h1 {
                 margin-block: 1.5rem;
+                grid-area: top-text;
             }
         }
 
         .bottom {
             h3 {
                 font-size: 1.5rem;
-                font-weight: 200;
+                font-weight: 300;
                 margin-block: 1.5rem;
             }
         }
@@ -140,7 +147,21 @@ main {
             }
             .btn{
                 #btn1{
+                    border-radius: 1rem;
+                    background-color: transparent;
                     padding: 0.5rem;
+                    color: rgb(65, 112, 255);
+                    border: 2px solid rgb(65, 112, 255);
+                    cursor: pointer;
+                }
+                #btn2{
+                    cursor: pointer;
+                    margin-block: 0.3rem;
+                    border-radius: 1rem;
+                    background-color: transparent;
+                    padding: 0.5rem;
+                    color: black;
+                    border: none;
                 }
             }
         }
@@ -168,6 +189,9 @@ main {
             .top {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr;
+                grid-template-areas: "top-text top-img"
+                                     
+                ;
                 align-items: center;
                 gap: 1rem;
 

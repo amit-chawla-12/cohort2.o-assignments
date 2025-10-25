@@ -66,16 +66,19 @@ main .section-bg {
 main .section-bg .top {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas: "top-img" "top-text";
 }
 main .section-bg .top img {
   width: 100%;
+  grid-area: top-img;
 }
 main .section-bg .top h1 {
   margin-block: 1.5rem;
+  grid-area: top-text;
 }
 main .section-bg .bottom h3 {
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 300;
   margin-block: 1.5rem;
 }
 main .section2 {
@@ -111,7 +114,21 @@ main .section3 .text p {
   margin-block: 1.5rem;
 }
 main .section3 .text .btn #btn1 {
+  border-radius: 1rem;
+  background-color: transparent;
   padding: 0.5rem;
+  color: rgb(65, 112, 255);
+  border: 2px solid rgb(65, 112, 255);
+  cursor: pointer;
+}
+main .section3 .text .btn #btn2 {
+  cursor: pointer;
+  margin-block: 0.3rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  color: black;
+  border: none;
 }
 main .section3 .img img {
   width: 100%;
@@ -126,6 +143,7 @@ main .section3 .img img {
   main .section-bg .top {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-template-areas: "top-text top-img";
     align-items: center;
     gap: 1rem;
   }
