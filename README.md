@@ -1,43 +1,46 @@
-# Cohort 2.0 Assignments
+# 🌐 CSS & SCSS Practice — 30 Week Challenge
 
-This repository contains my web development assignments from Cohort 2.0.  
-Each assignment is live and hosted using **GitHub Pages**.
-
-⚠️ Note: These assignments are not fully responsive yet.  
-I will update them with **responsive design (Flexbox, Grid, Media Queries)** once I learn responsiveness.
+This repository contains all my **frontend assignments (1–12)** where I practiced and built small projects using **HTML, CSS, and SCSS**.  
+Each assignment focuses on improving layout, design, and responsiveness using modern web techniques.  
 
 ---
 
-## 🔗 Live Assignment Links with Descriptions
-
-- [Assignment 1](https://amit-chawla-12.github.io/cohort2.o-assignments/assingment%201/)  
-  Created a **very simple personal portfolio** using basic HTML tags (`h`, `p`), colors, margins, and padding.
-
-- [Assignment 2](https://amit-chawla-12.github.io/cohort2.o-assignments/assingment%202/)  
-  Practiced **CSS background images**, downloaded and used external fonts/images, created a **button in HTML** and styled it with CSS.
-
-- [Assignment 3](https://amit-chawla-12.github.io/cohort2.o-assignments/assingment%203/)  
-  Combined previous concepts with **CSS positioning** — created overlapping images and layouts using `absolute`, `relative`, etc.
-
-- [Assignment 4](https://amit-chawla-12.github.io/cohort2.o-assignments/assingment%204/)  
-  Cloned **half of Apple’s website** using **Flexbox**, hover effects, and all previously learned CSS properties.
+## 🚀 What I Learned
+- CSS fundamentals — margin, padding, background, positioning  
+- **Flexbox** and **Grid** for layout  
+- **Bento Grid** and creative section design  
+- **SCSS** — mixins, nesting, partials, imports  
+- **Transitions, transforms, and hover effects**  
+- **Responsive design** using `clamp()`, relative units & media queries  
 
 ---
 
-## 📂 Repository Structure
-
-cohort2.o-assignments/
-├── assingment 1/
-│ └── index.html
-├── assingment 2/
-│ └── index.html
-├── assingment 3/
-│ └── index.html
-├── assingment 4/
-│ └── index.html
-└── README.md
-
+## 📚 Assignments Overview
+| No. | Project / Task | Key Focus |
+|----|-----------------|------------|
+| 1 | Basic Styling | CSS basics, colors, spacing |
+| 2 | Background Image & Buttons | Background cover, margin/padding |
+| 3 | Div with Positioned Image | Absolute positioning, layout practice |
+| 4 | Apple Clone | Flexbox, borders, visuals |
+| 5 | Social Links Card | Hover, z-index, flex-wrap |
+| 6 | Dribbble Clone | Transition, rotate, scale |
+| 7 | Navis Clone | Grid + Flexbox combination |
+| 8 | BMW Bento Grid | Grid area, gap, flex rows |
+| 9 | SCSS Hover Project | Mixins, nesting, imports |
+| 10 | Website Clone (Self Task) | All CSS + SCSS concepts |
+| 11 | Grid Without Height | Responsive grid flow |
+| 12 | Responsive Multi-Section Website | SCSS, Flex, Grid, clamp(), full responsive |
 
 ---
 
-✨ *Made with ❤️ while learning Web Development in Cohort 2.0*
+## 🧠 Highlights
+✅ Built 12+ real layouts  
+✅ Used modern CSS & SCSS structure  
+✅ Practiced responsiveness & clean design  
+✅ Combined Flexbox, Grid, and Bento patterns  
+
+---
+
+## ⚙️ Run Locally
+```bash
+git clone https://github.com/amit-chawla-12/cohort2.o-assignments
