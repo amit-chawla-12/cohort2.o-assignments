@@ -1,90 +1,251 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Assignments — Amit Chawla</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;1,600&display=swap"
+    rel="stylesheet">
   <meta name="color-scheme" content="dark light">
   <style>
-    :root{
-      --bg1: #0f1724; /* deep navy */
-      --bg2: #071124; /* darker */
-      --glass: rgba(255,255,255,0.06);
-      --accent:  #4f46e5; /* indigo */
-      --accent-2:#06b6d4; /* teal */
-      --muted: rgba(255,255,255,0.75);
-      --card-radius:18px;
+    :root {
+      --bg1: #0f1724;
+      /* deep navy */
+      --bg2: #071124;
+      /* darker */
+      --glass: rgba(255, 255, 255, 0.06);
+      --accent: #4f46e5;
+      /* indigo */
+      --accent-2: #06b6d4;
+      /* teal */
+      --muted: rgba(255, 255, 255, 0.75);
+      --card-radius: 18px;
       color-scheme: dark;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
 
-    body{
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(79,70,229,0.12), transparent),
-                  radial-gradient(800px 400px at 90% 90%, rgba(6,182,212,0.06), transparent),
-                  linear-gradient(180deg,var(--bg1), var(--bg2));
-      -webkit-font-smoothing:antialiased;
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    body {
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(79, 70, 229, 0.12), transparent),
+        radial-gradient(800px 400px at 90% 90%, rgba(6, 182, 212, 0.06), transparent),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      -webkit-font-smoothing: antialiased;
       color: #e6eef8;
-      padding:3.5rem 1.25rem;
-      display:flex;align-items:flex-start;justify-content:center;
+      padding: 3.5rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
     }
 
-    .wrap{width:100%;max-width:1100px}
-
-    header{display:flex;gap:1rem;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
-    .brand{display:flex;gap:0.9rem;align-items:center}
-    .logo{
-      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
-      display:grid;place-items:center;font-weight:700;font-family:Merriweather, serif;color:white;font-size:18px;box-shadow:0 6px 30px rgba(2,6,23,0.6);
-    }
-    h1{font-size:1.25rem;margin:0}
-    p.lead{margin:0;color:var(--muted);font-size:0.95rem}
-
-    .controls{display:flex;gap:0.75rem;align-items:center}
-    .search{
-      background:var(--glass);border:1px solid rgba(255,255,255,0.06);padding:0.6rem 0.75rem;border-radius:12px;min-width:260px;color:inherit;outline:none;
-      display:flex;gap:0.5rem;align-items:center
-    }
-    .search input{background:transparent;border:0;color:inherit;outline:none;font-size:0.95rem;width:100%}
-    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:0.55rem 0.9rem;border-radius:10px;border:0;color:white;font-weight:600;cursor:pointer}
-    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
-
-    main{background:transparent}
-    .grid{
-      display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:1.25rem
+    .wrap {
+      width: 100%;
+      max-width: 1100px
     }
 
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-      border:1px solid rgba(255,255,255,0.03);
-      padding:1.05rem;border-radius:var(--card-radius);backdrop-filter: blur(6px);
-      display:flex;flex-direction:column;gap:0.6rem;align-items:flex-start;transition:transform .25s cubic-bezier(.2,.9,.2,1),box-shadow .25s;
-      box-shadow:0 6px 22px rgba(3,7,18,0.6);
+    header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem
     }
-    .card:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(3,7,18,0.7)}
-    .card h2{font-size:1rem;margin:0;color:#fff}
-    .meta{font-size:0.82rem;color:var(--muted)}
 
-    .link-row{margin-top:auto;width:100%;display:flex;gap:0.5rem;align-items:center}
-    .link-row a{flex:1;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;padding:0.5rem;border-radius:10px;border:1px solid rgba(255,255,255,0.06);font-weight:600}
-    .link-row a.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
-    .link-row a:focus{outline:3px solid rgba(79,70,229,0.18)}
+    .brand {
+      display: flex;
+      gap: 0.9rem;
+      align-items: center
+    }
 
-    .count{color:var(--muted);font-size:0.9rem}
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-family: Merriweather, serif;
+      color: white;
+      font-size: 18px;
+      box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
+    }
 
-    footer{margin-top:1.75rem;color:var(--muted);font-size:0.9rem;display:flex;justify-content:space-between;align-items:center}
+    h1 {
+      font-size: 1.25rem;
+      margin: 0
+    }
 
-    @media (max-width:520px){
-      .search{min-width:0;width:100%}
-      header{flex-direction:column;align-items:flex-start;gap:0.75rem}
-      .controls{width:100%;justify-content:space-between}
-      .brand{gap:0.6rem}
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center
+    }
+
+    .search {
+      background: var(--glass);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0.6rem 0.75rem;
+      border-radius: 12px;
+      min-width: 260px;
+      color: inherit;
+      outline: none;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center
+    }
+
+    .search input {
+      background: transparent;
+      border: 0;
+      color: inherit;
+      outline: none;
+      font-size: 0.95rem;
+      width: 100%
+    }
+
+    .btn {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      padding: 0.55rem 0.9rem;
+      border-radius: 10px;
+      border: 0;
+      color: white;
+      font-weight: 600;
+      cursor: pointer
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted)
+    }
+
+    main {
+      background: transparent
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 1.05rem;
+      border-radius: var(--card-radius);
+      backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      align-items: flex-start;
+      transition: transform .25s cubic-bezier(.2, .9, .2, 1), box-shadow .25s;
+      box-shadow: 0 6px 22px rgba(3, 7, 18, 0.6);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 50px rgba(3, 7, 18, 0.7)
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      margin: 0;
+      color: #fff
+    }
+
+    .meta {
+      font-size: 0.82rem;
+      color: var(--muted)
+    }
+
+    .link-row {
+      margin-top: auto;
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center
+    }
+
+    .link-row a {
+      flex: 1;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-weight: 600
+    }
+
+    .link-row a.primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: white
+    }
+
+    .link-row a:focus {
+      outline: 3px solid rgba(79, 70, 229, 0.18)
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 0.9rem
+    }
+
+    footer {
+      margin-top: 1.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    @media (max-width:520px) {
+      .search {
+        min-width: 0;
+        width: 100%
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem
+      }
+
+      .controls {
+        width: 100%;
+        justify-content: space-between
+      }
+
+      .brand {
+        gap: 0.6rem
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
@@ -98,7 +259,10 @@
 
       <div class="controls">
         <label class="search" for="q">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
           <input id="q" placeholder="Search assignments (e.g. assignment 1)" aria-label="Search assignments">
         </label>
         <button class="btn" id="reset">Reset</button>
@@ -118,18 +282,18 @@
 
   <script>
     const assignments = [
-      {title: 'Assignment 1', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%201/'},
-      {title: 'Assignment 2', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%202/'},
-      {title: 'Assignment 3', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%203/'},
-      {title: 'Assignment 4', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%204/'},
-      {title: 'Assignment 5', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%204/'},
-      {title: 'Assignment 6', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%206/'},
-      {title: 'Assignment 7', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%207/'},
-      {title: 'Assignment 8', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%208/'},
-      {title: 'Assignment 9', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%209/'},
-      {title: 'Assignment 10', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%2010-self/'},
-      {title: 'Assignment 11', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%2011/'},
-      {title: 'Assignment 12', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%2012/'},
+      { title: 'Assignment 1', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%201/' },
+      { title: 'Assignment 2', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%202/' },
+      { title: 'Assignment 3', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%203/' },
+      { title: 'Assignment 4', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%204/' },
+      { title: 'Assignment 5', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%204/' },
+      { title: 'Assignment 6', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%206/' },
+      { title: 'Assignment 7', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%207/' },
+      { title: 'Assignment 8', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%208/' },
+      { title: 'Assignment 9', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%209/' },
+      { title: 'Assignment 10', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%2010-self/' },
+      { title: 'Assignment 11', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%2011/' },
+      { title: 'Assignment 12', url: 'https://amit-chawla-12.github.io/cohort2.o-assignments/assignment%2012/' },
     ];
 
     const grid = document.getElementById('grid');
@@ -137,9 +301,9 @@
     const q = document.getElementById('q');
     const reset = document.getElementById('reset');
 
-    function render(list){
+    function render(list) {
       grid.innerHTML = '';
-      list.forEach((a,i)=>{
+      list.forEach((a, i) => {
         const card = document.createElement('article');
         card.className = 'card';
         card.innerHTML = `
@@ -159,24 +323,25 @@
     render(assignments);
 
     // filter
-    q.addEventListener('input', (e)=>{
+    q.addEventListener('input', (e) => {
       const term = e.target.value.trim().toLowerCase();
-      if(!term){ render(assignments); return; }
+      if (!term) { render(assignments); return; }
       const filtered = assignments.filter(a => a.title.toLowerCase().includes(term));
       render(filtered);
     });
 
-    reset.addEventListener('click', ()=>{ q.value=''; render(assignments); q.focus(); });
+    reset.addEventListener('click', () => { q.value = ''; render(assignments); q.focus(); });
 
     // keyboard accessibility: quick open (1-9, 0 => 10)
-    window.addEventListener('keydown', (e)=>{
-      if(document.activeElement.tagName === 'INPUT') return;
-      const n = parseInt(e.key,10);
-      if(!isNaN(n)){
-        const idx = n === 0 ? 9 : n-1; // 1->0, 0->9
-        if(assignments[idx]) window.open(assignments[idx].url, '_blank', 'noopener');
+    window.addEventListener('keydown', (e) => {
+      if (document.activeElement.tagName === 'INPUT') return;
+      const n = parseInt(e.key, 10);
+      if (!isNaN(n)) {
+        const idx = n === 0 ? 9 : n - 1; // 1->0, 0->9
+        if (assignments[idx]) window.open(assignments[idx].url, '_blank', 'noopener');
       }
     });
   </script>
 </body>
+
 </html>
