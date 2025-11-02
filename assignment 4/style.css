@@ -15,8 +15,8 @@
 }
 html,
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 .container {
   background: rgb(233, 232, 232);
@@ -25,7 +25,7 @@ body {
 }
 .pages {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-image: url(images/background-img.jpg);
   background-size: cover;
   background-position: center;
@@ -86,7 +86,11 @@ body {
   font-size: 16px;
   font-weight: 100;
 }
-
+button:nth-child(1):hover {
+  color: #047ffa;
+  background-color: transparent;
+  border: 1px solid #047ffa;
+}
 #buy {
   color: #047ffa;
   background-color: transparent;
