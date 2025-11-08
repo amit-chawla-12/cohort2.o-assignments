@@ -41,6 +41,6 @@ Each assignment focuses on improving layout, design, and responsiveness using mo
 
 ---
 
-## ⚙️ Run Locally
+<!-- ## ⚙️ Run Locally
 ```bash
-git clone https://github.com/amit-chawla-12/cohort2.o-assignments
+git clone https://github.com/amit-chawla-12/cohort2.o-assignments -->
