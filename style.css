@@ -1,13 +1,9 @@
 :root {
   --bg1: #0f1724;
-  /* deep navy */
   --bg2: #071124;
-  /* darker */
   --glass: rgba(255, 255, 255, 0.06);
   --accent: #4f46e5;
-  /* indigo */
   --accent-2: #06b6d4;
-  /* teal */
   --muted: rgba(255, 255, 255, 0.75);
   --card-radius: 18px;
   color-scheme: dark;
