@@ -13,7 +13,7 @@ const navigate = useNavigate()
     function () {
       const fetchDetail = async () => {
         const { data } = await axios.get(
-          `https://api.escuelajs.co/api/v1/products/${id.productId}`
+          `https://dummyjson.com/products/${id.productId}`
         );
         console.log(data);
         setProductData(data);
